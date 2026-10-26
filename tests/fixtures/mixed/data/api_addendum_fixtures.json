@@ -1,0 +1,322 @@
+[
+  {
+    "id": "noncomposite_ambiguous_4_6_8__ambiguous_tandem",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "ACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGT",
+    "length": 56,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 56,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 56
+      }
+    ],
+    "expected_mixed": false
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__ambiguous_tandem_rc",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "ACGTGTACGTACGTACGTGTACGTACGTACGTGTACGTACGTACGTGTACGTACGT",
+    "length": 56,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 56,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "-",
+        "length": 56
+      }
+    ],
+    "expected_mixed": false
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__ambiguous_internal",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "NNNNNACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTNNNNN",
+    "length": 66,
+    "oracle_intervals": [
+      {
+        "start": 5,
+        "end": 61,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 56
+      }
+    ],
+    "expected_mixed": false
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__guaranteed_components",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "ACGTACGTACGTACGTACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTGTACACGTGTACACGTGTACACGTGTACACGTGTACACGT",
+    "length": 116,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 28,
+        "guaranteed_mixed": false,
+        "possible_mixed": false,
+        "component_min_capped": [
+          2,
+          0,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          1,
+          0
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "-",
+        "length": 28
+      },
+      {
+        "start": 0,
+        "end": 116,
+        "guaranteed_mixed": true,
+        "possible_mixed": true,
+        "component_min_capped": [
+          2,
+          2,
+          2
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": false,
+        "strand": "+",
+        "length": 116
+      },
+      {
+        "start": 72,
+        "end": 116,
+        "guaranteed_mixed": false,
+        "possible_mixed": false,
+        "component_min_capped": [
+          0,
+          0,
+          2
+        ],
+        "component_max_capped": [
+          1,
+          0,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "-",
+        "length": 44
+      }
+    ],
+    "expected_mixed": true
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__guaranteed_components_rc",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "ACGTGTACACGTGTACACGTGTACACGTGTACACGTGTACACGTGTACGTACGTACGTGTACGTACGTACGTGTACGTACGTACGTGTACGTACGTACGTACGTACGTACGTACGT",
+    "length": 116,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 44,
+        "guaranteed_mixed": false,
+        "possible_mixed": false,
+        "component_min_capped": [
+          0,
+          0,
+          2
+        ],
+        "component_max_capped": [
+          1,
+          0,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 44
+      },
+      {
+        "start": 0,
+        "end": 116,
+        "guaranteed_mixed": true,
+        "possible_mixed": true,
+        "component_min_capped": [
+          2,
+          2,
+          2
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": false,
+        "strand": "-",
+        "length": 116
+      },
+      {
+        "start": 88,
+        "end": 116,
+        "guaranteed_mixed": false,
+        "possible_mixed": false,
+        "component_min_capped": [
+          2,
+          0,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          1,
+          0
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 28
+      }
+    ],
+    "expected_mixed": true
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__left_clipped",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "CGTACACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGT",
+    "length": 61,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 61,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 61
+      }
+    ],
+    "expected_mixed": false
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__right_clipped",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "ACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTGTACACG",
+    "length": 63,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 63,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 63
+      }
+    ],
+    "expected_mixed": false
+  },
+  {
+    "id": "noncomposite_ambiguous_4_6_8__both_clipped",
+    "group": "noncomposite_ambiguous_4_6_8",
+    "category": "noncomposite_ambiguous_grammar",
+    "sequence": "CGTACACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTACGTACGTACACGTGTACACG",
+    "length": 68,
+    "oracle_intervals": [
+      {
+        "start": 0,
+        "end": 68,
+        "guaranteed_mixed": false,
+        "possible_mixed": true,
+        "component_min_capped": [
+          0,
+          2,
+          0
+        ],
+        "component_max_capped": [
+          2,
+          2,
+          2
+        ],
+        "count_cap": 2,
+        "qualification_ambiguous": true,
+        "strand": "+",
+        "length": 68
+      }
+    ],
+    "expected_mixed": false
+  }
+]

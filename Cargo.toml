@@ -1,0 +1,28 @@
+[package]
+name = "trm"
+version = "0.8.5"
+edition = "2021"
+rust-version = "1.75"
+description = "Streaming WGS repeat discovery with telomeric motif and lineage priors"
+license = "MIT"
+# This crate is the native CLI. The reviewed GitHub source bundle also contains
+# the Python reporting stack and its fixtures; never package the research tree.
+readme = "release/NATIVE_README.md"
+include = ["Cargo.toml", "Cargo.lock", "LICENSE", "src/*.rs", "examples/*.rs", "data/telomere_motifs.tsv", "release/NATIVE_README.md"]
+
+[features]
+default = ["fast-gzip"]
+rust-gzip = ["flate2/rust_backend"]
+fast-gzip = ["flate2/zlib-rs", "dep:libz-rs-sys"]
+
+[dependencies]
+flate2 = { version = "=1.0.35", default-features = false }
+# Keep the optional accelerated backend on the same Rust 1.75 MSRV.
+libz-rs-sys = { version = "=0.4.2", optional = true, default-features = false, features = ["std", "rust-allocator"] }
+libc = "=0.2.185"
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = { version = "=1.0.149", features = ["arbitrary_precision"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

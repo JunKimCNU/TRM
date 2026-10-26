@@ -1,0 +1,24 @@
+motif	lineage	evidence	source
+TTAGGG	Eukaryota;Animalia;Chordata;Homo sapiens	experimental	https://pubmed.ncbi.nlm.nih.gov/2805070/
+TTTAGGG	Eukaryota;Viridiplantae;Embryophyta;Arabidopsis thaliana	experimental	https://doi.org/10.1016/0092-8674(88)90494-1
+TTAGGC	Eukaryota;Animalia;Nematoda;Caenorhabditis elegans	experimental	https://pubmed.ncbi.nlm.nih.gov/8799140/
+TTAGAC	Eukaryota;Animalia;Nematoda;Panagrellus sp. LJ2284;Panagrellus sp. LJ2285	assembly_terminal	https://genome.cshlp.org/content/33/11/1947.full.pdf
+TTAGGT	Eukaryota;Animalia;Nematoda;Caenorhabditis uteleia	published_terminal_long_read	https://genome.cshlp.org/content/suppl/2023/11/21/gr.278124.123.DC1/Supplemental_Material.pdf
+TTAGG	Eukaryota;Animalia;Arthropoda;Insecta;Bombyx mori	experimental	https://pubmed.ncbi.nlm.nih.gov/8441388/
+TTGGGG	Eukaryota;Ciliophora;Tetrahymena thermophila	experimental	https://doi.org/10.1016/0092-8674(85)90170-9
+TTTTGGGG	Eukaryota;Ciliophora;Euplotes crassus	experimental	https://pubmed.ncbi.nlm.nih.gov/2474761/
+TCAGG	Eukaryota;Animalia;Arthropoda;Insecta;Coleoptera;Tenebrionoidea;Tribolium castaneum	experimental	https://pubmed.ncbi.nlm.nih.gov/21499744/
+TTGGG	Eukaryota;Animalia;Arthropoda;Insecta;Coleoptera;Anoplotrupes stercorosus	experimental	https://pmc.ncbi.nlm.nih.gov/articles/PMC8233369/
+TTTTAGGG	Eukaryota;Viridiplantae;Klebsormidiophyceae;Klebsormidium	experimental	https://doi.org/10.1093/gbe/evt019
+TTTTAGG	Eukaryota;Viridiplantae;Klebsormidiophyceae;Klebsormidium subtilissimum TEL97	experimental	https://doi.org/10.1093/gbe/evt019
+CTCGGTTATGGG	Eukaryota;Viridiplantae;Embryophyta;Asparagales;Allium	experimental	https://doi.org/10.1111/tpj.13115
+TTTTTTAGGG	Eukaryota;Viridiplantae;Embryophyta;Solanales;Cestrum elegans	experimental	https://pubmed.ncbi.nlm.nih.gov/25828846/
+TTTCAGG	Eukaryota;Viridiplantae;Embryophyta;Lamiales;Genlisea hispidula	experimental	https://doi.org/10.1111/tpj.13058
+TTCAGG	Eukaryota;Viridiplantae;Embryophyta;Lamiales;Genlisea hispidula	experimental	https://doi.org/10.1111/tpj.13058
+TTATTGGG	Eukaryota;Animalia;Arthropoda;Insecta;Hymenoptera;Chalcidoidea;Nasonia vitripennis	assembly_terminal	https://doi.org/10.1126/sciadv.aaz9808
+TTAGGTTGGGG	Eukaryota;Animalia;Arthropoda;Insecta;Hymenoptera;Bombus terrestris	experimental	https://pmc.ncbi.nlm.nih.gov/articles/PMC9841428/
+TTTATTAGGG	Eukaryota;Viridiplantae;Embryophyta;Malpighiales;Chrysobalanaceae	comparative	https://doi.org/10.1093/nar/gkad672
+ACGGATGTCTAACTTCTTGGTGT	Eukaryota;Fungi;Ascomycota;Saccharomycotina;Candida albicans	experimental	https://pmc.ncbi.nlm.nih.gov/articles/PMC2661832/
+ACGGATTTGATTAGGTATGTGGTGT	Eukaryota;Fungi;Ascomycota;Saccharomycotina;Kluyveromyces lactis	experimental	https://pmc.ncbi.nlm.nih.gov/articles/PMC2756879/
+TTAGGGTCAACA	Eukaryota;Fungi;Ascomycota;Pezizomycotina;Aspergillus oryzae	experimental	https://pubmed.ncbi.nlm.nih.gov/12698283/
+AATGGGGGG	Eukaryota;Rhodophyta;Cyanidioschyzon merolae	experimental_terminal	https://doi.org/10.1186/1741-7007-5-28

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sosm_9_11",
+    "units": [
+      "TTGGGTTAC",
+      "ACTTGGGTTAC"
+    ]
+  },
+  {
+    "id": "plantlike_6_7",
+    "units": [
+      "TTCAGG",
+      "TTTCAGG"
+    ]
+  },
+  {
+    "id": "unrelated_5_5",
+    "units": [
+      "ACGTC",
+      "GATCA"
+    ]
+  },
+  {
+    "id": "ambiguous_3_3_6",
+    "units": [
+      "ACG",
+      "TCA",
+      "ACGTCA"
+    ]
+  },
+  {
+    "id": "boundary_3_4",
+    "units": [
+      "AGT",
+      "CCGA"
+    ]
+  }
+]

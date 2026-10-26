@@ -1,0 +1,10 @@
+[
+  {
+    "id": "noncomposite_ambiguous_4_6_8",
+    "units": [
+      "ACGT",
+      "ACGTAC",
+      "GTACACGT"
+    ]
+  }
+]

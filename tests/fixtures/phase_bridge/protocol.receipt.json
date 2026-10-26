@@ -1,0 +1,8 @@
+{
+  "frozen_before_first_module_run": true,
+  "frozen_utc": "2026-09-28T11:38:55.656636+00:00",
+  "new_module_executed_before_freeze": false,
+  "pair_controls": 31,
+  "protocol_sha256": "f9e14b03427002ca493527b51d198f0d44a64ad5fc7a40da607c3e96b6b641f6",
+  "scope": "Frozen by independent controls agent before importing or executing scripts/phase_bridge.py. Core API/settings agreed; no outcomes were used to select fixtures."
+}

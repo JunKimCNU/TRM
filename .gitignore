@@ -1,0 +1,27 @@
+# Default deny at the workspace root. Public releases use release/source_files.json.
+/*
+!/.gitignore
+!/Cargo.toml
+!/Cargo.lock
+!/LICENSE
+!/README.md
+!/CHANGELOG.md
+!/THIRD_PARTY.md
+!/RELEASE_MANIFEST.json
+!/src/
+!/examples/
+!/scripts/
+!/tests/
+!/docs/
+!/release/
+!/.github/
+!/data/
+/data/*
+!/data/telomere_motifs.tsv
+!/data/taxon_motif_references.tsv
+!/data/mixed_array_definitions.example.json
+/scripts/windows/
+/tests/test_windows*.py
+__pycache__/
+*.part
+*.pyc

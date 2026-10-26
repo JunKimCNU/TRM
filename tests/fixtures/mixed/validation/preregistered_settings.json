@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-09-23T10:39:59.128170+00:00",
+  "stage": "before_any_new_mixed_engine_output_inspection",
+  "method": "reference_guided_exact_mixed_array_reconstruction_not_de_novo",
+  "minimum_span_bp": 24,
+  "minimum_complete_copies_per_component": 2,
+  "required_distinct_components": 2,
+  "grammar": "Exact supplied same-G-strand units in arbitrary order; both strands; no cyclic rotation reset at joins; no mismatch or gap bridging; record-edge partial units allowed and do not count full copies.",
+  "ambiguity": "All exact parses for identical maximal span contribute per-unit count minima/maxima; mixed requires at least two unit minima >=2. Possible-only mixed is retained separately, never promoted by arbitrary tie resolution.",
+  "primary_synthetic_gate": "Each record matches independent oracle guaranteed-mixed presence and maximum guaranteed-mixed span; intervals compared where native emits every interval. Pure arrays must not become mixed.",
+  "fixtures": {
+    "records": 152,
+    "groups": [
+      {
+        "id": "sosm_9_11",
+        "units": [
+          "TTGGGTTAC",
+          "ACTTGGGTTAC"
+        ]
+      },
+      {
+        "id": "plantlike_6_7",
+        "units": [
+          "TTCAGG",
+          "TTTCAGG"
+        ]
+      },
+      {
+        "id": "unrelated_5_5",
+        "units": [
+          "ACGTC",
+          "GATCA"
+        ]
+      },
+      {
+        "id": "ambiguous_3_3_6",
+        "units": [
+          "ACG",
+          "TCA",
+          "ACGTCA"
+        ]
+      },
+      {
+        "id": "boundary_3_4",
+        "units": [
+          "AGT",
+          "CCGA"
+        ]
+      }
+    ],
+    "positive_records": 100
+  },
+  "real_data": {
+    "published_segments": 87,
+    "sequence_unique_full_reads": 65,
+    "original_molecule_identity_confirmed": false,
+    "coordinate_truth": "Use saved unique-segment mapping; require native interval overlap with its published segment. Do not claim 65/87 read sensitivity or original ID recovery.",
+    "segment_diagnostic": "All87 published telomeric segments are diagnostic input, not independent molecules; report exact-grammar eligible subgroup separately from all87.",
+    "metrics": [
+      "qualifying mixed interval presence",
+      "max exact mixed span",
+      "published array length",
+      "frozen previous homogeneous tract max",
+      "record-edge and orientation evidence",
+      "runtime and peak RSS"
+    ]
+  },
+  "limitations": [
+    "Synthetic sequence specificity is not biological telomere specificity.",
+    "Exact reconstruction cannot bridge substitutions or indels; a shorter recovered span is not the full biological telomere length.",
+    "No new downloads; matched sequencing modalities and assembly are not independent biological replicates.",
+    "Known-literature definitions are supplied explicitly; recovery does not measure de novo motif discovery."
+  ],
+  "fixture_hashes": {
+    "data/mixed_validation_20260923/ambiguous_3_3_6.definitions.json": "f62426462cb2654cfffc85a0ea529589ed6a82d802fb621a7ece4b8378cd35d4",
+    "data/mixed_validation_20260923/ambiguous_3_3_6.fasta": "32c5b60f2cf301665892b067878f83f847d902413c37e59fab236abeee31d158",
+    "data/mixed_validation_20260923/boundary_3_4.definitions.json": "f2d091c51ec8664deaeaaa5d76c00e649c893ac6325b4372eca6ba4b3d453bb7",
+    "data/mixed_validation_20260923/boundary_3_4.fasta": "34cfe2d69a995b58d87956e33618a7d4c0cfd434cafa7f211850f848c89a9e9c",
+    "data/mixed_validation_20260923/definitions.json": "8ab763d5f35cb579aad4df4a1bfbe5a3ef2a2c10efa5ee8ae3df589b4fe08433",
+    "data/mixed_validation_20260923/fixtures.fasta": "d8d11770a7faeb444651e736024a5c631d87d3f9376ab8fb2f81ac765bf70042",
+    "data/mixed_validation_20260923/fixtures.json": "0ce24ab77a8d85ee45965c5af125aa746e6fddbe011462e46cd3511a5823d46a",
+    "data/mixed_validation_20260923/plantlike_6_7.definitions.json": "912f806d684581d6750cffa9a6c66901d6efc01bc9a14e08d2d65f6134ee55e3",
+    "data/mixed_validation_20260923/plantlike_6_7.fasta": "0121b74e44a6cdc362c68b2190d31f924bdfe0e15689fef6bbff22bed1470cb5",
+    "data/mixed_validation_20260923/published_87_segments.fasta": "0a182931db9dc1715cf06a073c7e35114c3f75406d0eea4e561935704623a928",
+    "data/mixed_validation_20260923/sosm_9_11.definitions.json": "7a75dd64020093fdcac40d5a5beb1824ad89ebc13834add447b2a53acc9b209b",
+    "data/mixed_validation_20260923/sosm_9_11.fasta": "541713fb594d6e1b6888653135be3f4fbd7758f0ae9c2398b9d76213a5084fe3",
+    "data/mixed_validation_20260923/unrelated_5_5.definitions.json": "e4fd6a800815d1df3123136681449aefc5a1d3b62af976004edce28ade007312",
+    "data/mixed_validation_20260923/unrelated_5_5.fasta": "4a05d1327a025af028c351134699ec00e7ec11707d1ff950acdbfc53cc91b1a8",
+    "results/mixed_validation_20260923/reference_oracle.py": "0fca754b0d247992fd2270f702c50eef66a43b172b64461cc35a84ef962e21d7",
+    "results/mixed_validation_20260923/freeze_validation.py": "64e9b904c2ba7dc0e78d7f4b25e40d734a82fe55f2208978889fd08efdbc37ee"
+  },
+  "source_hashes": {
+    "data/next_holdout_20260923/S16.tsv": "d20d9d58ff1c20c4d5515e3f28cc3842e3109fd7af5c64d2abc0b11bdb500328",
+    "results/holdout_osmophilus_20260923/acquisition_truth/published_read_mapping.tsv": "a5a931cb1c8939638892c652ca42c58906bba03c47f13c989fa603ca8f88cf0f",
+    "results/holdout_osmophilus_20260923/acquisition_truth/sequence_unique_full_reads.fastq": "f8f6f45250b80046f8a487701b82a33c819735219cd383bdb515145a9db0fec3",
+    "results/holdout_osmophilus_20260923/truth_validation/per_read_summary.tsv": "e329ddf7a3920985f12b54081fef121b41c6f4482bc94a6d028b78cc32e4ad96"
+  }
+}

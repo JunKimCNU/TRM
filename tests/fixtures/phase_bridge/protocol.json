@@ -1,0 +1,677 @@
+{
+  "created_utc": "2026-09-28T11:38:55.653437+00:00",
+  "interpretation": "Development controls only; not empirical biological sensitivity, specificity, physical chromosome-end proof, or automatically merged tract calls.",
+  "oracle_protocol": {
+    "deterministic_selection": "exhaustive A/C queries for AC and ACG; fixed seed 20260928 ACGT queries for TTAGGG",
+    "edit_budgets": [
+      0,
+      1,
+      2
+    ],
+    "indel_run_limits": [
+      1,
+      2
+    ],
+    "method": "Explicit finite unrolled repeat strings plus exhaustive complete edit-path recursion with memoization only of reference suffix states; no cyclic template-state DP.",
+    "motifs": [
+      "AC",
+      "ACG",
+      "TTAGGG"
+    ],
+    "optimal_count": "Distinct operation paths capped at two; full fixed endpoints; aggregate finite target lengths congruent to endpoint phase.",
+    "query_alphabet": "ACGT",
+    "query_lengths": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "pair_controls": [
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "perfect_two_copies",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "perfect_two_copies_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 74,
+        "start0": 46,
+        "strand": "+",
+        "tract_id": "perfect_two_copies_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_old_status": "rejected_by_bounded_model",
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "short_perfect_five",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "short_perfect_five_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 65,
+        "start0": 37,
+        "strand": "+",
+        "tract_id": "short_perfect_five_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "short_perfect_one",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "short_perfect_one_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 61,
+        "start0": 33,
+        "strand": "+",
+        "tract_id": "short_perfect_one_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "abutting_same_phase",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "abutting_same_phase_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 32,
+        "strand": "+",
+        "tract_id": "abutting_same_phase_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 1,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "single_substitution",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "single_substitution_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 81,
+        "start0": 53,
+        "strand": "+",
+        "tract_id": "single_substitution_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTCAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 1,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "single_insertion",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "single_insertion_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 75,
+        "start0": 47,
+        "strand": "+",
+        "tract_id": "single_insertion_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGCTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 1,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "single_deletion",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "single_deletion_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 73,
+        "start0": 45,
+        "strand": "+",
+        "tract_id": "single_deletion_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 1,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "empty_gap_boundary_deletion",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "empty_gap_boundary_deletion_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 32,
+        "strand": "+",
+        "tract_id": "empty_gap_boundary_deletion_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTAGGGTTTAGGGTTTAGGGTTTAGGGTACAC"
+    },
+    {
+      "config": {
+        "min_edits_floor": 0
+      },
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "empty_gap_no_floor_rejected",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "empty_gap_no_floor_rejected_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 32,
+        "strand": "+",
+        "tract_id": "empty_gap_no_floor_rejected_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTAGGGTTTAGGGTTTAGGGTTTAGGGTACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "nonrepeat_spacer",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "nonrepeat_spacer_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 92,
+        "start0": 64,
+        "strand": "+",
+        "tract_id": "nonrepeat_spacer_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "ambiguous_gap_N",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "ambiguous_gap_N_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "ambiguous_gap_N_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGNGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "ambiguous_gap_IUPAC",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "ambiguous_gap_IUPAC_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "ambiguous_gap_IUPAC_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTRGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "short_left_anchor",
+      "left": {
+        "end0": 32,
+        "start0": 19,
+        "strand": "+",
+        "tract_id": "short_left_anchor_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "short_left_anchor_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "damaged_boundary_anchor",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "damaged_boundary_anchor_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "damaged_boundary_anchor_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGCTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "opposite_anchor_strand",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "opposite_anchor_strand_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "-",
+        "tract_id": "opposite_anchor_strand_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "expected_strand": "-",
+      "id": "expected_strand_conflict",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "expected_strand_conflict_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "expected_strand_conflict_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "overlapping_anchors",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "overlapping_anchors_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 31,
+        "strand": "+",
+        "tract_id": "overlapping_anchors_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "gap_exceeds_bound",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "gap_exceeds_bound_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 1089,
+        "start0": 1061,
+        "strand": "+",
+        "tract_id": "gap_exceeds_bound_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "config": {
+        "max_span_bp": 50
+      },
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "span_exceeds_bound",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "span_exceeds_bound_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "span_exceeds_bound_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "config": {
+        "max_edits": 3,
+        "min_edits_floor": 3
+      },
+      "expected_min_edits": 3,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "max_deletion_run_three",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "max_deletion_run_three_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 32,
+        "strand": "+",
+        "tract_id": "max_deletion_run_three_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGAGGGTTTAGGGTTTAGGGTTTAGGGTTTACAC"
+    },
+    {
+      "config": {
+        "max_edits": 4,
+        "min_edits_floor": 4
+      },
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "deletion_run_four_rejected",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "deletion_run_four_rejected_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 60,
+        "start0": 32,
+        "strand": "+",
+        "tract_id": "deletion_run_four_rejected_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGGGGTTTAGGGTTTAGGGTTTAGGGTTTAACAC"
+    },
+    {
+      "config": {
+        "max_edits": 3,
+        "min_edits_floor": 3
+      },
+      "expected_min_edits": 3,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "insertion_run_three",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "insertion_run_three_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 63,
+        "start0": 35,
+        "strand": "+",
+        "tract_id": "insertion_run_three_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGCCCTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "config": {
+        "max_edits": 3,
+        "max_indel_run": 2,
+        "min_edits_floor": 3
+      },
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "insertion_run_three_cap_two_rejected",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "insertion_run_three_cap_two_rejected_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 63,
+        "start0": 35,
+        "strand": "+",
+        "tract_id": "insertion_run_three_cap_two_rejected_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGCCCTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 1,
+      "expected_path_ambiguous": true,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "ambiguous_insertion_placement",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "ambiguous_insertion_placement_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 68,
+        "start0": 40,
+        "strand": "+",
+        "tract_id": "ambiguous_insertion_placement_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "internal_repeat_context",
+      "left": {
+        "end0": 188,
+        "start0": 160,
+        "strand": "+",
+        "tract_id": "internal_repeat_context_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 223,
+        "start0": 195,
+        "strand": "+",
+        "tract_id": "internal_repeat_context_R"
+      },
+      "sequence": "ACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGCACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACA"
+    },
+    {
+      "alignments": [
+        {
+          "mapq": 60,
+          "query_end0": 40,
+          "query_start0": 0,
+          "strand": "+",
+          "target": "chr1",
+          "target_end0": 140,
+          "target_length": 1000,
+          "target_start0": 100,
+          "tp": "P"
+        },
+        {
+          "mapq": 60,
+          "query_end0": 70,
+          "query_start0": 40,
+          "strand": "-",
+          "target": "chr2",
+          "target_end0": 230,
+          "target_length": 1000,
+          "target_start0": 200,
+          "tp": "P"
+        }
+      ],
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "split_primary_mapping",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "split_primary_mapping_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "split_primary_mapping_R"
+      },
+      "sequence": "CACGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "source_coordinate_offset",
+      "left": {
+        "end0": 96,
+        "start0": 68,
+        "strand": "+",
+        "tract_id": "source_coordinate_offset_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 129,
+        "start0": 101,
+        "strand": "+",
+        "tract_id": "source_coordinate_offset_R"
+      },
+      "sequence": "ACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGACAC"
+    },
+    {
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "nonexact_distal_anchor_is_outside_boundary_window",
+      "left": {
+        "end0": 32,
+        "start0": 4,
+        "strand": "+",
+        "tract_id": "nonexact_distal_anchor_is_outside_boundary_window_L"
+      },
+      "motif": "TTTAGGG",
+      "right": {
+        "end0": 67,
+        "start0": 39,
+        "strand": "+",
+        "tract_id": "nonexact_distal_anchor_is_outside_boundary_window_R"
+      },
+      "sequence": "CACGCTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGTTTAGGGACAC"
+    },
+    {
+      "config": {
+        "max_gap_bp": 3
+      },
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "chain_ab",
+      "left": {
+        "end0": 12,
+        "start0": 0,
+        "strand": "+",
+        "tract_id": "A"
+      },
+      "motif": "ACG",
+      "right": {
+        "end0": 27,
+        "start0": 15,
+        "strand": "+",
+        "tract_id": "B"
+      },
+      "sequence": "ACGACGACGACGACGACGACGACGACGACGACGACGACGACG"
+    },
+    {
+      "config": {
+        "max_gap_bp": 3
+      },
+      "expected_min_edits": 0,
+      "expected_status": "compatible_under_bounded_phase_bridge",
+      "id": "chain_bc",
+      "left": {
+        "end0": 27,
+        "start0": 15,
+        "strand": "+",
+        "tract_id": "B"
+      },
+      "motif": "ACG",
+      "right": {
+        "end0": 42,
+        "start0": 30,
+        "strand": "+",
+        "tract_id": "C"
+      },
+      "sequence": "ACGACGACGACGACGACGACGACGACGACGACGACGACGACG"
+    },
+    {
+      "config": {
+        "max_gap_bp": 3
+      },
+      "expected_status": "rejected_by_bounded_phase_bridge",
+      "id": "chain_ac",
+      "left": {
+        "end0": 12,
+        "start0": 0,
+        "strand": "+",
+        "tract_id": "A"
+      },
+      "motif": "ACG",
+      "right": {
+        "end0": 42,
+        "start0": 30,
+        "strand": "+",
+        "tract_id": "C"
+      },
+      "sequence": "ACGACGACGACGACGACGACGACGACGACGACGACGACGACG"
+    }
+  ],
+  "protocol_version": 1,
+  "settings": {
+    "max_dp_states": 250000,
+    "max_edit_fraction": 0.05,
+    "max_edits": 16,
+    "max_gap_bp": 1024,
+    "max_indel_run": 3,
+    "max_span_bp": 10000,
+    "min_anchor_copies": 2,
+    "min_edits_floor": 1
+  }
+}

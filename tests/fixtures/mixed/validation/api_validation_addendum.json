@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-23T10:43:36.011100+00:00",
+  "stage": "before_any_new_mixed_engine_output_inspection",
+  "reason": "Root confirmed an originally intended atomic-unit API constraint omitted in initial schema clarification: supplied units that are exact concatenations of other supplied units are rejected.",
+  "original_preregistration_preserved": true,
+  "original_preregistration_sha256": "c1c0ce95ac51549d56797d6eaaa5ccf1e3a7c78ed2f127fa9c06a0b7978ed193",
+  "original_fixture_group_reclassified_as_invalid_definition": "ambiguous_3_3_6",
+  "invalid_definition_records": 26,
+  "remaining_original_valid_sequence_fixtures": 126,
+  "additional_noncomposite_ambiguous_sequence_fixtures": 8,
+  "new_group": {
+    "id": "noncomposite_ambiguous_4_6_8",
+    "units": [
+      "ACGT",
+      "ACGTAC",
+      "GTACACGT"
+    ]
+  },
+  "ambiguity_witness": {
+    "sequence": "ACGTACGTACACGT",
+    "parse_1": [
+      "ACGTAC",
+      "GTACACGT"
+    ],
+    "parse_2": [
+      "ACGT",
+      "ACGTAC",
+      "ACGT"
+    ]
+  },
+  "definition_constraints": [
+    "Every unit is primitive",
+    "No rotational or reverse-complement family duplicate",
+    "No unit is exactly representable as concatenation of the others"
+  ],
+  "thresholds_changed": false,
+  "hashes": {
+    "data/mixed_validation_20260923/noncomposite_ambiguous_4_6_8.definitions.json": "1ff856d23b48af268a94c43495fe32e19751259c9e6a3b7070db62e9facf1575",
+    "data/mixed_validation_20260923/noncomposite_ambiguous_4_6_8.fasta": "61d342385a8ed586f7b0a9fd97de76ca9152e5bcf575ec0938954266be7a7c32",
+    "data/mixed_validation_20260923/api_addendum_fixtures.json": "363943c681ddbf14e6cfc971c7af669ed7c50b50bed80d9e79abb57bd5b5b6a3",
+    "results/mixed_validation_20260923/freeze_api_addendum.py": "cebd561160fb48084ab4b947b54f7a6ab7f5144407e0fe53cad024a7f70fb73c"
+  }
+}

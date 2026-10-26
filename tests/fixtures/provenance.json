@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "purpose": "Small frozen regression fixtures relocated for self-contained release tests; not biological accuracy estimates.",
+  "files": [
+    {
+      "path": "mixed/validation/preregistered_settings.json",
+      "source_path": "results/mixed_validation_20260923/preregistered_settings.json",
+      "bytes": 5557,
+      "sha256": "c1c0ce95ac51549d56797d6eaaa5ccf1e3a7c78ed2f127fa9c06a0b7978ed193",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/validation/api_validation_addendum.json",
+      "source_path": "results/mixed_validation_20260923/api_validation_addendum.json",
+      "bytes": 1824,
+      "sha256": "4910b3889d67122290186bd6176f69c96ec952a6b63249d604061f8fc61d820a",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/validation/reference_oracle.py",
+      "source_path": "results/mixed_validation_20260923/reference_oracle.py",
+      "bytes": 3439,
+      "sha256": "0fca754b0d247992fd2270f702c50eef66a43b172b64461cc35a84ef962e21d7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/validation/freeze_validation.py",
+      "source_path": "results/mixed_validation_20260923/freeze_validation.py",
+      "bytes": 9058,
+      "sha256": "64e9b904c2ba7dc0e78d7f4b25e40d734a82fe55f2208978889fd08efdbc37ee",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/validation/freeze_api_addendum.py",
+      "source_path": "results/mixed_validation_20260923/freeze_api_addendum.py",
+      "bytes": 3612,
+      "sha256": "cebd561160fb48084ab4b947b54f7a6ab7f5144407e0fe53cad024a7f70fb73c",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/ambiguous_3_3_6.definitions.json",
+      "source_path": "data/mixed_validation_20260923/ambiguous_3_3_6.definitions.json",
+      "bytes": 103,
+      "sha256": "f62426462cb2654cfffc85a0ea529589ed6a82d802fb621a7ece4b8378cd35d4",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/ambiguous_3_3_6.fasta",
+      "source_path": "data/mixed_validation_20260923/ambiguous_3_3_6.fasta",
+      "bytes": 1719,
+      "sha256": "32c5b60f2cf301665892b067878f83f847d902413c37e59fab236abeee31d158",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/api_addendum_fixtures.json",
+      "source_path": "data/mixed_validation_20260923/api_addendum_fixtures.json",
+      "bytes": 7496,
+      "sha256": "363943c681ddbf14e6cfc971c7af669ed7c50b50bed80d9e79abb57bd5b5b6a3",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/boundary_3_4.definitions.json",
+      "source_path": "data/mixed_validation_20260923/boundary_3_4.definitions.json",
+      "bytes": 85,
+      "sha256": "f2d091c51ec8664deaeaaa5d76c00e649c893ac6325b4372eca6ba4b3d453bb7",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/boundary_3_4.fasta",
+      "source_path": "data/mixed_validation_20260923/boundary_3_4.fasta",
+      "bytes": 1893,
+      "sha256": "34cfe2d69a995b58d87956e33618a7d4c0cfd434cafa7f211850f848c89a9e9c",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/definitions.json",
+      "source_path": "data/mixed_validation_20260923/definitions.json",
+      "bytes": 452,
+      "sha256": "8ab763d5f35cb579aad4df4a1bfbe5a3ef2a2c10efa5ee8ae3df589b4fe08433",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/fixtures.fasta",
+      "source_path": "data/mixed_validation_20260923/fixtures.fasta",
+      "bytes": 13653,
+      "sha256": "d8d11770a7faeb444651e736024a5c631d87d3f9376ab8fb2f81ac765bf70042",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/fixtures.json",
+      "source_path": "data/mixed_validation_20260923/fixtures.json",
+      "bytes": 99874,
+      "sha256": "0ce24ab77a8d85ee45965c5af125aa746e6fddbe011462e46cd3511a5823d46a",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/noncomposite_ambiguous_4_6_8.definitions.json",
+      "source_path": "data/mixed_validation_20260923/noncomposite_ambiguous_4_6_8.definitions.json",
+      "bytes": 122,
+      "sha256": "1ff856d23b48af268a94c43495fe32e19751259c9e6a3b7070db62e9facf1575",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/noncomposite_ambiguous_4_6_8.fasta",
+      "source_path": "data/mixed_validation_20260923/noncomposite_ambiguous_4_6_8.fasta",
+      "bytes": 1001,
+      "sha256": "61d342385a8ed586f7b0a9fd97de76ca9152e5bcf575ec0938954266be7a7c32",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/plantlike_6_7.definitions.json",
+      "source_path": "data/mixed_validation_20260923/plantlike_6_7.definitions.json",
+      "bytes": 92,
+      "sha256": "912f806d684581d6750cffa9a6c66901d6efc01bc9a14e08d2d65f6134ee55e3",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/plantlike_6_7.fasta",
+      "source_path": "data/mixed_validation_20260923/plantlike_6_7.fasta",
+      "bytes": 3011,
+      "sha256": "0121b74e44a6cdc362c68b2190d31f924bdfe0e15689fef6bbff22bed1470cb5",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/published_87_segments.fasta",
+      "source_path": "data/mixed_validation_20260923/published_87_segments.fasta",
+      "bytes": 19287,
+      "sha256": "0a182931db9dc1715cf06a073c7e35114c3f75406d0eea4e561935704623a928",
+      "transformation": "none; byte-identical copy",
+      "publication_url": "https://doi.org/10.1093/g3journal/jkad028",
+      "source_table": "Table S16, factual telomeric sequence segments; not article prose or figures",
+      "source_note": "Original frozen fixture hash preserved; real-data sensitivity is not estimated by the portable software tests."
+    },
+    {
+      "path": "mixed/data/sosm_9_11.definitions.json",
+      "source_path": "data/mixed_validation_20260923/sosm_9_11.definitions.json",
+      "bytes": 95,
+      "sha256": "7a75dd64020093fdcac40d5a5beb1824ad89ebc13834add447b2a53acc9b209b",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/sosm_9_11.fasta",
+      "source_path": "data/mixed_validation_20260923/sosm_9_11.fasta",
+      "bytes": 4632,
+      "sha256": "541713fb594d6e1b6888653135be3f4fbd7758f0ae9c2398b9d76213a5084fe3",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/unrelated_5_5.definitions.json",
+      "source_path": "data/mixed_validation_20260923/unrelated_5_5.definitions.json",
+      "bytes": 89,
+      "sha256": "e4fd6a800815d1df3123136681449aefc5a1d3b62af976004edce28ade007312",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "mixed/data/unrelated_5_5.fasta",
+      "source_path": "data/mixed_validation_20260923/unrelated_5_5.fasta",
+      "bytes": 2398,
+      "sha256": "4a05d1327a025af028c351134699ec00e7ec11707d1ff950acdbfc53cc91b1a8",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "phase_bridge/protocol.json",
+      "source_path": "results/phase_bridge_20260928/controls/protocol.json",
+      "bytes": 19910,
+      "sha256": "f9e14b03427002ca493527b51d198f0d44a64ad5fc7a40da607c3e96b6b641f6",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "phase_bridge/protocol.receipt.json",
+      "source_path": "results/phase_bridge_20260928/controls/protocol.receipt.json",
+      "bytes": 429,
+      "sha256": "f38719b1a8bd3e606936a088e9db67249c57986b645cbedd102d7b65b10b45c9",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "tract_context/protocol.json",
+      "source_path": "results/tract_context_20260928/controls/protocol.json",
+      "bytes": 27602,
+      "sha256": "53a51c3f06c5e9607aa76240b8c09390f73a3ed11583e79dffdcacf698012e47",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "tract_context/protocol.receipt.json",
+      "source_path": "results/tract_context_20260928/controls/protocol.receipt.json",
+      "bytes": 408,
+      "sha256": "05bc27638b1fad73acb451e1ee1a54575a324ab445e12522212b91de0c7f6f6f",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "volvariella/run_volvariella.py",
+      "source_path": "results/improvement_implementation_20261015/phase3_biology/run_volvariella.py",
+      "bytes": 11016,
+      "sha256": "c6d88b67d8fb4ae81c39da73b9a0d3b7267916b5565f011b8aec62788291b744",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "path": "irregular/mixed_definitions.json",
+      "source_path": "results/matched_japonicus_20260926/mixed_definitions.json",
+      "bytes": 102,
+      "sha256": "00f918298d11c95606e6f331a7de035a40a803058ac4daddcb1fd0195d7f02e5",
+      "transformation": "none; byte-identical copy",
+      "publication_url": "https://doi.org/10.1002/yea.3922",
+      "source_note": "Supplied short repeat-unit strings; not long-read or assembly data."
+    }
+  ]
+}

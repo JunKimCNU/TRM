@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-09-28T11:06:06.798019+00:00",
+  "protocol_sha256": "53a51c3f06c5e9607aa76240b8c09390f73a3ed11583e79dffdcacf698012e47",
+  "protocol_path": "results/tract_context_20260928/controls/protocol.json",
+  "frozen_before_first_module_run": true,
+  "pair_controls": 22,
+  "module_executed_by_this_agent_before_freeze": false,
+  "expected_outcomes_were_declared_before_module_execution": true
+}

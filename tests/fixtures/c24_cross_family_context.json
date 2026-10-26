@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "purpose": "Post hoc real-sequence regression for cross-family approximate-extension traversal; not independent biological validation.",
+  "fixture": {
+    "path": "c24_cross_family_context.fasta",
+    "fasta_sha256": "86c504680929d6acc81d578a4b0c4066453f6dd48d256725bc4fefefb8ef8ad1",
+    "uppercase_sequence_sha256": "3052e73accbab4add7ac1e0d675ad98196d7aff2b63f2736e61e113dc272db9f",
+    "sequence_bases": 1361,
+    "preserves_source_soft_masking": true
+  },
+  "source": {
+    "assembly": "GCA_902705455.1",
+    "assembly_name": "araThaC24v1",
+    "organism": "Arabidopsis thaliana",
+    "accession": "C24",
+    "record": "CACSHJ010000087.1",
+    "record_bases": 29413772,
+    "source_start0": 29412411,
+    "source_end0": 29413772,
+    "coordinate_convention": "zero-based half-open",
+    "archive_path": "data/independent_panel_v080_20260927/assemblies/GCA_902705455.1_araThaC24v1_genomic.fna.gz",
+    "archive_sha256": "46ea41e6c18469323bfb5dbd19ca27168a5b7ff42d0bf2adbca0fc41660be048",
+    "full_record_fixture": "results/independent_panel_review_20260928/tract_difference_retry/full_record.fasta",
+    "full_record_fixture_sha256": "8bb22ace0db04c031269aff0a9b658ff07f1e98ff76d35229cd8a652e3832aa4"
+  },
+  "parameters": {
+    "seed_bases": 24,
+    "min_copies": 3,
+    "min_identity": 0.85,
+    "min_k": 3,
+    "max_k": 32,
+    "min_tract": 500
+  },
+  "frozen_baseline": {
+    "version": "0.8.0",
+    "binary_sha256": "12d1b5d676b8375fc8706e81e2c16b81796b655d548c07557698e8765483c842",
+    "local_scan": {
+      "family": "AAACCCT",
+      "repeat_bases": 28,
+      "max_tract": 28
+    },
+    "full_record_scan": {
+      "family": "AAACCCT",
+      "repeat_bases": 3716,
+      "max_tract": 152
+    }
+  },
+  "targeted_reference_observations": {
+    "outward_motif": "TTTAGGG",
+    "canonical_family": "AAACCCT",
+    "local_repeat_bases": 307,
+    "local_max_tract": 279,
+    "local_tracts": [
+      {
+        "start0": 821,
+        "end0": 849,
+        "strand_relative_to_canonical": "-"
+      },
+      {
+        "start0": 1005,
+        "end0": 1284,
+        "strand_relative_to_canonical": "-"
+      }
+    ],
+    "full_record_repeat_bases": 3995,
+    "full_record_max_tract": 279
+  },
+  "existing_other_families": {
+    "AAACCCTATACCCT": {
+      "max_tract": 404,
+      "repeat_bases": 404
+    },
+    "ACCCTAT": {
+      "max_tract": 404,
+      "repeat_bases": 404
+    },
+    "AACCCTG": {
+      "max_tract": 81,
+      "repeat_bases": 81
+    }
+  },
+  "diagnostic_sources": [
+    "results/independent_panel_review_20260928/tract_difference_retry/registration.json",
+    "results/independent_panel_review_20260928/tract_difference_retry/comparison.json",
+    "results/independent_panel_review_20260928/detector_trace/diagnosis.json"
+  ],
+  "limitations": [
+    "Selected after observing a discrepancy; not a holdout benchmark.",
+    "Clipping creates an artificial left boundary; do not use fixture endpoints as telomere truth.",
+    "The 279 bp tract ends 77 bp before the deposited full-record right edge; it does not meet the 50 bp endpoint rule.",
+    "Targeted and de novo discovery are distinct algorithms; agreement here is fixture-specific, not a universal equality requirement."
+  ]
+}

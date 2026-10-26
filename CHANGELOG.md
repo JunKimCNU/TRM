@@ -1,5 +1,10 @@
 # Change log
 
+## 0.8.5-rc4 — portable invalid-input test
+
+- Give the invalid-manifest CLI regression an explicit one-worker CPU budget. On the four-CPU GitHub runner, its former 32-worker defaults correctly stopped at the resource guard before reaching the intended manifest error. The test now isolates its intended contract on small machines while retaining all input/output assertions.
+- Keep resource guards, runtime defaults, detector behavior and strict CI requirements unchanged. The related test module passes with actual one-CPU affinity; full hosted validation is recorded against the published commit.
+
 ## 0.8.5-rc3 — hosted CI compatibility follow-up
 
 - Address current stable Clippy warnings in one Rust documentation comment and five test-only single-element slices. Detection logic, thresholds, reference tables and scientific output are unchanged.

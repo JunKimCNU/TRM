@@ -124,7 +124,8 @@ class ManifestInputTests(unittest.TestCase):
         self.manifest.write_text('sample_id\tpath1\tpath2\nsample\t\t\n')
         output = self.root/'output'
         command = [sys.executable, str(ROOT/'scripts/evidence_batch.py'), '--manifest', str(self.manifest),
-                   '--source', str(self.root/'source'), '--output', str(output), '--binary', '/nonexistent/trm']
+                   '--source', str(self.root/'source'), '--output', str(output), '--binary', '/nonexistent/trm',
+                   '--jobs', '1', '--threads', '1', '--cpu-budget', '1']
         completed = subprocess.run(command, text=True, capture_output=True, timeout=10)
         self.assertEqual(completed.returncode, 2, completed.stderr)
         self.assertIn('path1 must not be empty', completed.stderr)

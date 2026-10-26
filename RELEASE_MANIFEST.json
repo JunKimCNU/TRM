@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "native_version": "0.8.5",
-  "candidate": "0.8.5-rc3",
+  "candidate": "0.8.5-rc4",
   "scope": "Linux research source bundle; no raw WGS, installed binary or AWS implementation",
   "files": [
     {
@@ -16,8 +16,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2032,
-      "sha256": "8f56b4b0a9ae901b58337d8f49b01a39ac057ffd82184bdba970050444057dfc"
+      "bytes": 2634,
+      "sha256": "bc73ec75ca202d90db4445c864e9424d686fd23831a694016ed26ba5575e17b6"
     },
     {
       "path": "Cargo.lock",
@@ -37,7 +37,7 @@
     {
       "path": "README.md",
       "bytes": 4902,
-      "sha256": "9c339001b48b4a2db797d5c32b8130ca0df0a9aa98fcbcbb39caa3f4e8e7e088"
+      "sha256": "98a4ea05c9e49e6061c86cf876be99f91a45afe184763970915e5397962ad757"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -971,8 +971,8 @@
     },
     {
       "path": "tests/test_evidence_batch.py",
-      "bytes": 15597,
-      "sha256": "089022bad276f7ad2cdff1c7c6c1debf1d3957c52be4e4c0a41efd37713ddafa"
+      "bytes": 15670,
+      "sha256": "3044e8fa810c0d604d802c58fd2f98f212cc1d96b8e19cb86035864705934919"
     },
     {
       "path": "tests/test_evidence_batch_scaling.py",

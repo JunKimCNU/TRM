@@ -10,7 +10,7 @@ TRM searches complete FASTQ/FASTA records for tandem repeats and reports evidenc
 | Interpretation policy | 0.7.2 |
 | Assessment reporting / schema | 1.13.0 / 22 |
 
-The source artifact is labeled **0.8.5-rc3**. This is a distribution candidate label; it does not change the native version. Source is available at [JunKimCNU/TRM](https://github.com/JunKimCNU/TRM); a source commit is distinct from a tagged GitHub Release. No standalone prebuilt binary is supplied. Builds embed the supplied catalog; record its hash and the executable hash because older local binaries with the same native version can contain earlier reference tables.
+The source artifact is labeled **0.8.5-rc4**. This is a distribution candidate label; it does not change the native version. Source is available at [JunKimCNU/TRM](https://github.com/JunKimCNU/TRM); a source commit is distinct from a tagged GitHub Release. No standalone prebuilt binary is supplied. Builds embed the supplied catalog; record its hash and the executable hash because older local binaries with the same native version can contain earlier reference tables.
 
 ## Install and check
 

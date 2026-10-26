@@ -381,12 +381,12 @@ mod tests {
         let sequence = b"AAAAACGTACGTNACGTACGTAAAA";
         let left = tract(0, 4);
         assert_eq!(
-            adjacent_window(sequence, &left, &[left.clone()], true, 21),
+            adjacent_window(sequence, &left, std::slice::from_ref(&left), true, 21),
             b"ACGTACGT"
         );
         let right = tract(20, 24);
         assert_eq!(
-            adjacent_window(sequence, &right, &[right.clone()], false, 21),
+            adjacent_window(sequence, &right, std::slice::from_ref(&right), false, 21),
             b"ACGTACG"
         );
         let barrier = tract(7, 9);
@@ -400,7 +400,7 @@ mod tests {
             &unambiguous[9..20]
         );
         assert_eq!(
-            adjacent_window(unambiguous, &left, &[left.clone()], true, 3),
+            adjacent_window(unambiguous, &left, std::slice::from_ref(&left), true, 3),
             &unambiguous[4..7]
         );
     }
@@ -426,8 +426,20 @@ mod tests {
         {
             let sequence = [motif.repeat(4), flank].concat();
             let mut part = FlankPeriodAnnotation::new(motif);
-            part.observe(&sequence, &base_tract, &[base_tract.clone()], true, i % 3);
-            expected.observe(&sequence, &base_tract, &[base_tract.clone()], true, i % 3);
+            part.observe(
+                &sequence,
+                &base_tract,
+                std::slice::from_ref(&base_tract),
+                true,
+                i % 3,
+            );
+            expected.observe(
+                &sequence,
+                &base_tract,
+                std::slice::from_ref(&base_tract),
+                true,
+                i % 3,
+            );
             groups.push(part);
         }
         let mut forward = FlankPeriodAnnotation::new(motif);

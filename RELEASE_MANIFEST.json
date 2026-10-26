@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "native_version": "0.8.5",
-  "candidate": "0.8.5-rc2",
+  "candidate": "0.8.5-rc3",
   "scope": "Linux research source bundle; no raw WGS, installed binary or AWS implementation",
   "files": [
     {
@@ -16,8 +16,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1560,
-      "sha256": "4ef80f9ec721b30f0976c6daa4d38463bbb1fec48b9aebde5a60b74883c12852"
+      "bytes": 2032,
+      "sha256": "8f56b4b0a9ae901b58337d8f49b01a39ac057ffd82184bdba970050444057dfc"
     },
     {
       "path": "Cargo.lock",
@@ -36,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4820,
-      "sha256": "ba0526dfa9f6be4173c185e4a73fa597c9d36d618bec58eef939659983b44a96"
+      "bytes": 4902,
+      "sha256": "9c339001b48b4a2db797d5c32b8130ca0df0a9aa98fcbcbb39caa3f4e8e7e088"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -601,13 +601,13 @@
     },
     {
       "path": "src/evidence.rs",
-      "bytes": 48879,
-      "sha256": "8541fe028eec63b60c02a6424989221e18becfece6ea5e447ba1105f1cfacfec"
+      "bytes": 48881,
+      "sha256": "816404b09f43fa27163187c1e9b75b73a766f8b0cb61ec9dbf00758abe3d3cb1"
     },
     {
       "path": "src/flank_period.rs",
-      "bytes": 17243,
-      "sha256": "91094fa2db304b58e1b9f76c5912022ef40f2dfc01811ae03369be80b0f42e02"
+      "bytes": 17493,
+      "sha256": "fb0bda0bf0dbe85cf4c9c16514733967bcc170916b153625e929422f2979df36"
     },
     {
       "path": "src/input.rs",

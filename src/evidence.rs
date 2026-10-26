@@ -420,7 +420,7 @@ pub struct JunctionEvidence {
 }
 
 /// Operational flank screen: contiguous A/C/G/T, >=3 distinct bases, and no
-/// >=85% lag agreement at periods short enough to contain three repeat copies.
+/// `>=85%` lag agreement at periods short enough to contain three repeat copies.
 /// Passing does not establish a unique locus or a nonrepetitive genome region.
 pub(crate) fn usable_flank(flank: &[u8]) -> bool {
     if !is_dna(flank) || b"ACGT".iter().filter(|base| flank.contains(base)).count() < 3 {
